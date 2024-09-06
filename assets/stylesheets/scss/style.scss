@@ -1,0 +1,132 @@
+// reset css
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+// added fonts and other utilities
+@import "./fonts";
+@import "./mixins";
+
+
+.container {
+  max-width: 1622px;
+  width: 100%;
+  margin: 0px auto;
+}
+.btn {
+  background-color: #f74d4d;
+  padding: 0.899rem 1.33rem;
+  border: none;
+  border-radius: 8px;
+  font-family: gilroybold;
+  font-size: 1.063rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  &:hover {
+    background-color: #f61b1b;
+  }
+}
+.text-15 {
+  font-size: 0.938rem;
+  line-height: 26px;
+  font-family: gilroyregular;
+}
+.text-19 {
+  font-size: 1.188rem;
+  font-family: gilroyregular;
+  color: #ffffff;
+  line-height: 32px;
+}
+.text-17 {
+  font-size: 1.063rem;
+}
+.text-13 {
+  font-size: 0.813rem;
+}
+
+// header of the page
+header {
+  background-image: url("../../images/header-bg.png");
+  background-size: cover;
+
+  padding: 29px 1rem 220.76px;
+  position: relative;
+  // navbar
+  .navbar {
+    width: 100%;
+    @include flex(space-between);
+    .logo {
+      font-family: rubikbold;
+      font-size: 1.5rem;
+      color: #ffffff;
+    }
+    .nav {
+      margin-left: auto;
+      margin-right: 53px;
+      max-width: 333px;
+      width: 100%;
+      @include flex(space-between, center);
+      li {
+        list-style-type: none;
+        display: inline-block;
+        margin-right: 0.4rem;
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          font-family: gilroybold;
+          font-size: 0.938rem;
+          transition: all 0.5s linear;
+        }
+      }
+    }
+  }
+  .sm-container {
+    max-width: 541px;
+    width: 100%;
+    margin-top: 117px;
+    margin-left: 215px;
+
+    h1 {
+      font-family: gilroybold;
+      font-size: 3.75rem;
+      color: #ffffff;
+      line-height: 65px;
+      letter-spacing: -2px;
+    }
+    .text-19 {
+      opacity: 0.65;
+      margin: 1.563rem 0px 2.188rem;
+    }
+    .btn {
+      padding: 0.875rem 2.878rem 0.813rem;
+      line-height: 32px;
+    }
+    .download-buttons {
+      margin-top: 3.813rem;
+      .text-13 {
+        font-family: gilroybold;
+        letter-spacing: 1.63px;
+        color: #f4f7fa;
+        margin-bottom: 1.563rem;
+      }
+      button {
+        border: none;
+        cursor: pointer;
+        background: none;
+        margin-right: 0.938rem;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+  >img{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+  }
+}
