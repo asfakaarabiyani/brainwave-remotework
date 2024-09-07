@@ -14,6 +14,9 @@ gulp.task("sass", function () {
     .pipe(gulp.dest("assets/stylesheets/css")); // Destination folder for compiled CSS files
 });
 
+// Define the 'build' task (used for deployment)
+gulp.task("build", gulp.series("sass")); // Build task only compiles the SCSS
+
 // Define the 'watch' task
 gulp.task("watch", function () {
   gulp.watch("assets/stylesheets/scss/**/*.scss", gulp.series("sass")); // Watch Sass files for changes
