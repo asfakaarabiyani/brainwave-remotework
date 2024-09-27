@@ -1,0 +1,57 @@
+.container {
+    max-width: 1622px;
+    width: 100%;
+    margin: 0px auto;
+  }
+  .btn {
+    background-color: #f74d4d;
+    padding: 0.899rem 1.33rem;
+    border: none;
+    border-radius: 8px;
+    font-family: gilroybold;
+    font-size: 1.063rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    &:hover {
+      background-color: #f61b1b;
+    }
+  }
+  .text-48 {
+    font-size: 3rem;
+    font-family: "gilroybold";
+    color: #161c2d;
+    line-height: 58px;
+    letter-spacing: -1.8px;
+  }
+  .text-19 {
+    font-size: 1.188rem;
+    font-family: gilroyregular;
+    color: #161c2d;
+    letter-spacing: -0.2px;
+    line-height: 32px;
+  }
+  .text-21 {
+    font-size: 1.313rem;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+  }
+  .text-15 {
+    font-size: 0.938rem;
+    line-height: 26px;
+    font-family: gilroyregular;
+    letter-spacing: -0.1px;
+  }
+  
+  .text-17 {
+    font-size: 1.063rem;
+  }
+  .text-13 {
+    font-size: 0.813rem;
+  }
+  .wave {
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    width: 100%;
+  }
