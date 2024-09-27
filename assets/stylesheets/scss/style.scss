@@ -561,13 +561,6 @@ main.container {
           transition: all 0.5s linear;
           a {
             color: #161c2d;
-            &:hover {
-              background-color: #161c2d;
-              color: #ffffff;
-              height: 100%;
-              width: 100%;
-              display: inline-block;
-            }
           }
         }
       }
