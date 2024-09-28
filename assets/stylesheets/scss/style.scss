@@ -94,9 +94,7 @@ header {
   }
 }
 // end of header
-
 // main sections
-
 // content section
 main.container {
   > .sm-container {
@@ -514,68 +512,6 @@ main.container {
     }
   }
 }
-// for only responsive navbar
-@media only screen and (max-width: 768px) {
-  header {
-    overflow-x: hidden;
-    .navbar {
-      position: relative;
-      .logo {
-        order: 0;
-      }
-      .open svg,
-      .close svg {
-        cursor: pointer;
-      }
-      .open {
-        display: block;
-        order: 3;
-      }
-      .nav {
-        position: absolute;
-        z-index: 10;
-        background-color: rgba(251, 251, 251, 0.9);
-        color: #161c2d;
-        width: 70vw;
-        max-width: none;
-        display: block;
-        top: 0.5rem;
-        right: -100%;
-        border: 1px solid black;
-        box-shadow: 5px 5px 100px 10px black;
-        margin-right: 0px;
-        transition: all 0.5s linear;
-        border-radius: 12px;
-        .close {
-          display: block;
-          text-align: right;
-          margin-bottom: 3rem;
-        }
-        li {
-          display: block;
-          width: 100%;
-          padding: 1.5rem 1rem;
-          margin-top: 3rem;
-          margin-bottom: 2rem;
-          text-align: center;
-          transition: all 0.5s linear;
-          a {
-            color: #161c2d;
-          }
-        }
-      }
-      #check:checked ~ .nav {
-        right: 0rem;
-      }
-      .btn {
-        order: 2;
-        margin-left: auto;
-        margin-right: 1rem;
-      }
-    }
-  }
-}
-
 @media only screen and (min-width: 1451px) and (max-width: 1600px) {
   main.container {
     .container-Testimonial-Features {
@@ -769,7 +705,64 @@ main.container {
   }
 }
 @media only screen and (max-width: 768px) {
+  // for only responsive navbar
   header {
+    overflow-x: hidden;
+    .navbar {
+      position: relative;
+      .logo {
+        order: 0;
+      }
+      .open svg,
+      .close svg {
+        cursor: pointer;
+      }
+      .open {
+        display: block;
+        order: 3;
+      }
+      .nav {
+        position: absolute;
+        z-index: 10;
+        background-color: rgba(251, 251, 251, 0.9);
+        color: #161c2d;
+        width: 70vw;
+        max-width: none;
+        display: block;
+        top: 0.5rem;
+        right: -100%;
+        border: 1px solid black;
+        box-shadow: 5px 5px 100px 10px black;
+        margin-right: 0px;
+        transition: all 0.5s linear;
+        border-radius: 12px;
+        .close {
+          display: block;
+          text-align: right;
+          margin-bottom: 3rem;
+        }
+        li {
+          display: block;
+          width: 100%;
+          padding: 1.5rem 1rem;
+          margin-top: 3rem;
+          margin-bottom: 2rem;
+          text-align: center;
+          transition: all 0.5s linear;
+          a {
+            color: #161c2d;
+          }
+        }
+      }
+      #check:checked ~ .nav {
+        right: 0rem;
+      }
+      .btn {
+        order: 2;
+        margin-left: auto;
+        margin-right: 1rem;
+      }
+    }
     .sm-container {
       margin-left: 3rem;
     }
@@ -817,7 +810,7 @@ main.container {
         margin: 0px 2rem 0px;
       }
       .lg-container {
-        flex-wrap: wrap;
+        flex-direction: column;
         row-gap: 2rem;
         .card:nth-child(1) {
           margin-right: 0rem;
